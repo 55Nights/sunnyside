@@ -8,8 +8,12 @@ body{
     max-width: 100%;
     font-size:18px;
 }
-h3{
+h3,h1{
     font-family: 'Fraunces', serif;
+}
+h1{
+    color: white;
+    font-size: 3em;
 }
 h2,p,a{
     font-family: 'Barlow', sans-serif;
@@ -53,7 +57,6 @@ nav{
     background-size:cover;
     background-position: center;
     padding-bottom: 15em;
-    outline: 2px solid red;
  
 }
 @media only screen and (max-width:700px) {
@@ -118,21 +121,17 @@ a:nth-child(4){
 }
 .nav-title{
    position: relative;
-  top:10em;
-   left: 30%;
+   top:5em;
+   text-align: center;
 
-width: 40%;
-text-align: center;
 }
 .title{
     margin-bottom: 2em;
 }
 /*body part*/
 .grid-section{
-  
-    display: grid;
-    grid-template-columns:auto auto;
-   grid-template-rows: min-content;
+  display: block;
+    
 }
 @media only screen and (max-width:700px) {
     .grid-section{
@@ -142,9 +141,9 @@ display: block;
 .column1,.column4{
     position: relative;
    max-width: fit-content;
-   
-   text-align: start;
-   padding: 10em;
+   text-align: center;
+   padding: 1em;
+  
 }
 
 /*margin for h2 in grid section*/
@@ -157,6 +156,7 @@ p.body{
     line-height: 1.5;
     margin-bottom: 2em;
 }
+
 .column1 a,.column4 a{
    
    text-decoration: underline;
@@ -164,12 +164,15 @@ p.body{
 }
 .column2{
    background-position: center;
+   padding: 10em;
    background-size: 100%;
-    background-image: url(./desktop/egg.jpg);
+    background-image: url(./assets/mobile/image-transform.jpg);
 }
 .column3{
-   
-    background-image: url(./desktop/cup.jpg);
+        background-position: center;
+        padding: 10em;
+        background-size: 100%;
+    background-image: url(./assets/mobile/image-stand-out.jpg);
 }
 #pic-col{
   
@@ -179,15 +182,27 @@ p.body{
 .column5{
     margin-top: 2em;
     color:  hsl(167, 40%, 24%);
+    background-image: url(./assets/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    
+   
+
 }
 .column6{
     color:  hsl(198, 62%, 26%);
+    background-image: url(./assets/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+   
 }
 .desc{
-    border: 2px solid springgreen;
-    position: relative;
+   padding-top: 25em;
+   padding-bottom: 2em;
    text-align: center;
-   bottom: 15em;
+  
 }
 .title-desc{
     margin-bottom: 1em;
@@ -195,14 +210,21 @@ p.body{
 .desc-p{
     line-height: 1.6;
 }
+
 .main-text{
     width: 100%;
    margin-top: -1em;
+
 }
 .text-title{
     text-align: center;
     margin-top: 3em;
     margin-bottom: 3em;
+    color: black;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
 }
 .text{
     display: flex;
@@ -266,7 +288,7 @@ p.body{
 }
 .footer-icons{
     margin-bottom: 1em;
-    padding: 5px;
+    padding: 1em;
 }
 @media only screen and (max-width:700px) {
     .footer-links a{
